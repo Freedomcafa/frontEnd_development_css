@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fonts</title>
+        <style>
+            body {font-size:100%;} /* 设置默认字体大小为 16px */
+
+            /* 设置字体样式 */
+            p.serif{font-family:"Times New Roman",Times,serif;}
+            p.sansserif{font-family:Arial,Helvetica,sans-serif;}
+
+            /* 设置字体风格 正常、斜体、倾斜 */
+            p.normal {font-style:normal;}
+            p.italic {font-style:italic;}
+            p.oblique {font-style:oblique;}
+
+            /* 设置字体大小 */
+            h1.large {font-size:40px;}
+            h2.medium {font-size:30px;}
+            p.small {font-size:14px;}
+            /* 以下是使用 em 单位的字体大小 */
+            h1.emdata {font-size:2.5em;} /* 40px/16=2.5em */
+            h2.emdata {font-size:1.875em;} /* 30px/16=1.875em */
+            p.emdata {font-size:0.875em;} /* 14px/16=0.875em */
+
+            /* 设置字体粗细 */
+            p.normal {font-weight:normal;}
+            p.light {font-weight:lighter;}
+            p.thick {font-weight:bold;}
+            p.thicker {font-weight:900;}
+
+            /* 设置小型大写字母 */
+            p.normal {font-variant:normal;}
+            p.small {font-variant:small-caps;} 
+
+            /* 字体示例：所有的属性都可以组合使用 */
+            p.ex1
+            {
+                font:15px arial,sans-serif;
+            }
+            p.ex2
+            {
+                font:italic bold 12px/30px Georgia,serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>由于使用了 font-size:100%; 因此在所有浏览器中，可以显示相同的文本大小，并允许所有浏览器缩放文本的大小。</p>
+        <h1>CSS font-family</h1>
+        <p class="serif">这一段的字体是 Times New Roman </p>
+        <p class="sansserif">这一段的字体是 Arial.</p>
+
+        <p class="normal">这是一个段落,正常。</p>
+        <p class="italic">这是一个段落,斜体。</p>
+        <p class="oblique">这是一个段落,斜体。</p>
+
+
+        <h1 class="large">This is heading 1</h1>
+        <h2 class="medium">This is heading 2</h2>
+        <p class="small">This is a paragraph.</p>
+        <p class="small">允许在 Internet Explorer 9, Firefox, Chrome, Opera, 和 Safari 中通过缩放浏览器调整文本大小。</p>
+        <p class="small"><b>注意:</b>这个例子在 IE9之前的版本不工作, prior version 9 of IE.</p>
+
+        <h1 class="emdata">This is heading 1</h1>
+        <h2 class="emdata">This is heading 2</h2>
+        <p class="emdata">This is a paragraph.</p>
+        <p class="emdata">使用 em 单位，允许在所有浏览器中调整文本大小。
+        不幸的是,仍然是IE浏览器的问题。调整文本的大小时, em 单位会比正常的尺寸更大或更小。</p>
+
+
+        <p class="normal">This is a paragraph.</p>
+        <p class="light">This is a paragraph.</p>
+        <p class="thick">This is a paragraph.</p>
+        <p class="thicker">This is a paragraph.</p>
+
+        <p class="normal">My name is Hege Refsnes.</p>
+        <p class="small">My name is Hege Refsnes.</p>
+        <p class="small"><b>注意:</b>这个例子在 IE9之前的版本不工作, prior version 9 of IE.</p>
+        <p class="small">使用 small-caps 字体变体, 使小型大写字母看起来像小型的大写字母。</p>
+
+        <p class="ex1">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+        <p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+    </body>
+</html>

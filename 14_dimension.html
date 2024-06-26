@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dimension</title>
+        <style>
+            /* 使用像素设置图片的高度 */
+            img.normal
+            {
+                height:auto;
+            }
+            img.big
+            {
+                height:120px;
+            }
+            p.ex
+            {
+                height:100px;
+                width:100px;
+            }
+
+            /* 使用百分比设置图片的高度和宽度 */
+            img.one{height:auto;width:100%;}
+            img.two{height:50%;}
+            img.three{width:10%;}
+
+            /* 设置最大高度 */
+            p.max-height1
+            {
+                max-height:50px;
+                background-color:yellow;
+            }
+            p.max-height2
+            {
+                max-height:20%;
+                background-color:yellow;
+            }
+
+            /* 设置最小高度 */
+            p.min-height1
+            {
+                min-height:50px;
+                background-color:yellow;
+            }
+            p.min-height2
+            {
+                min-height:20%;
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="public/cat.jpg" alt="cat" class="normal">
+        <img src="public/cat.jpg" alt="cat" class="big">
+        <p class="ex">这个段落的高和宽是 100px.</p>
+        <p>这是段落中的一些文本。这是段落中的一些文本。
+            这是段落中的一些文本。这是段落中的一些文本。
+            这是段落中的一些文本。这是段落中的一些文本.
+        </p>
+    </body>
+</html>

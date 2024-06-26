@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>背景图像拼合</title>  
+    <style>
+      #navlist{position:relative;}
+      #navlist li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+      #navlist li, #navlist a{height:44px;display:block;}
+
+      #home{left:0px;width:46px;}
+      #home{background:url('public/cat.jpg') 0 0;}
+      #home a:hover{background: url('public/cat.jpg') 0 -45px;}
+
+      #prev{left:63px;width:43px;}
+      #prev{background:url('public/cat.jpg') -47px 0;}
+      #prev a:hover{background: url('public/cat.jpg') -47px -45px;}
+
+      #next{left:129px;width:43px;}
+      #next{background:url('public/cat.jpg') -91px 0;}
+      #next a:hover{background: url('public/cat.jpg') -91px -45px;}
+    </style>
+  </head>
+
+  <body>
+  <ul id="navlist">
+    <li id="home"><a href="public/cat.jpg"></a></li>
+    <li id="prev"><a href="public/cat.jpg"></a></li>
+    <li id="next"><a href="public/cat.jpg"></a></li>
+  </ul>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>文本样式</title> 
+        <style type="text/css">
+            h1 {letter-spacing:2px;}
+            h2 {letter-spacing:-3px;}
+            h1.shadow {text-shadow: 2px 2px #FF0000;}
+
+            p.small {line-height:70%;}
+            p.big {line-height:200%;}  
+
+            div.ex1 {direction:rtl;}
+
+            p.spacebigger
+            { 
+                word-spacing:30px;
+            }
+
+            p.nowrap
+            { 
+                white-space:nowrap;
+            }
+        </style>
+
+        <style>
+            img.top {vertical-align:text-top;}
+            img.bottom {vertical-align:text-bottom;}
+        </style>
+    </head>
+
+    <body>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h1 class="shadow">Text-shadow 效果</h1>
+
+        <p>
+            这是一个标准行高的段落。<br>
+            这是一个标准行高的段落。<br>
+            大多数浏览器的默认行高约为110%至120%。<br>
+        </p>
+
+        <p class="small">
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+        </p>
+
+        <p class="big">
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+        </p>
+
+        <div>一些文本。 默认书写方向</div>
+        <div class="ex1">一些文本。从右到左的书写方向。</div>  
+        
+        <p class="spacebigger">
+            This is some text. This is some text.
+        </p>
+
+        <p class="nowrap">
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+        </p>
+
+        <p>一个<img src="logo.png" alt="w3cschool" width="270" height="50" />默认对齐的图像。</p> 
+        <p>一个<img class="top" src="logo.png" alt="w3cschool" width="270" height="50" />  text-top 对齐的图像。</p> 
+        <p>一个<img class="bottom" src="logo.png" alt="w3cschool" width="270" height="50" /> text-bottom 对齐的图像。</p>
+</body>
+    </body>
+</html>

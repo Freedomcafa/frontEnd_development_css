@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position</title>
+        <style>
+            img
+            {
+                position: absolute;
+                clip: rect(0px, 900px, 800px, 0px);
+            }
+
+
+            div.ex1 {
+                background-color: lightblue;
+                width: 110px;
+                height: 110px;
+                overflow: scroll;
+            }
+
+            div.ex2 {
+                background-color: lightblue;
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+            }
+
+            div.ex3 {
+                background-color: lightblue;
+                width: 110px;
+                height: 110px;
+                overflow: auto;
+            }
+
+            div.ex4 {
+                background-color: lightblue;
+                width: 110px;
+                height: 110px;
+                overflow: visible;
+                position: relative;
+                top: 10px;
+                left: 10px;
+                
+                margin-bottom: 300px;
+            }
+
+            div.ex5
+            {
+                background-color:#00FFFF;
+                width:150px;
+                height:150px;
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>overflow 属性</h1>
+            <p>如果元素中的内容超出了给定的宽度和高度属性，overflow 属性可以确定是否显示滚动条等行为。</p>
+         
+        </div>
+
+        <h2>overflow: scroll:</h2>
+        <div class="ex1">我用什么才能留住你？
+            我给你瘦落的街道、绝望的落日、荒郊的月亮。
+            我给你一个久久地望着孤月的人的悲哀，
+            我给你一个从未有过信仰的人的忠诚。</div>
+
+        <h2>overflow: hidden:</h2>
+        <div class="ex2">我用什么才能留住你？
+            我给你瘦落的街道、绝望的落日、荒郊的月亮。
+            我给你一个久久地望着孤月的人的悲哀，
+            我给你一个从未有过信仰的人的忠诚。</div>
+
+        <h2>overflow: auto:</h2>
+        <div class="ex3">我用什么才能留住你？
+            我给你瘦落的街道、绝望的落日、荒郊的月亮。
+            我给你一个久久地望着孤月的人的悲哀，
+            我给你一个从未有过信仰的人的忠诚。</div>
+
+        <h2>overflow: visible (默认):</h2>
+        <div class="ex4">我用什么才能留住你？
+            我给你瘦落的街道、绝望的落日、荒郊的月亮。
+            我给你一个久久地望着孤月的人的悲哀，
+            我给你一个从未有过信仰的人的忠诚。</div>
+
+        <p>overflow 属性规定当内容溢出元素框时发生的事情。</p>
+
+        <div class="ex5">
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+        </div>
+
+    </body>
+</html>

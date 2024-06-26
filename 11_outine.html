@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Routine</title>
+        <style>
+            /* 轮廓样式案例 */
+            p.example
+            {
+                border:1px solid red;
+                outline:green dotted thick;
+            }
+
+            /* 轮廓样式 */
+            p {border:1px solid red;}
+            p.dotted {outline-style:dotted;}
+            p.dashed {outline-style:dashed;}
+            p.solid {outline-style:solid;}
+            p.double {outline-style:double;}
+            p.groove {outline-style:groove;}
+            p.ridge {outline-style:ridge;}
+            p.inset {outline-style:inset;}
+            p.outset {outline-style:outset;}
+
+            /* 轮廓颜色 */
+            p.a
+            {
+                border:1px solid red;
+                outline-style:dotted;
+                outline-color:#00ff00;
+            }   
+
+            /* 轮廓宽度 */
+            p.one
+            {
+                border:1px solid red;
+                outline-style:solid;
+                outline-width:thin;
+            }
+            p.two
+            {
+                border:1px solid red;
+                outline-style:dotted;
+                outline-width:3px;
+            }
+</style>
+        </style>
+    </head>
+    <body>
+        <p class="example"><b>注意:</b> 如果只有一个 !DOCTYP E指定 IE8 支持 outline 属性。</p>
+        <p class="example">如果有多个 !DOCTYPE 指定，则只有 IE8 支持 outline 属性。</p>
+
+        <p class="dotted">点线轮廓</p>
+        <p class="dashed">虚线轮廓</p>
+        <p class="solid">实线轮廓</p>
+        <p class="double">双线轮廓</p>
+        <p class="groove">凹槽轮廓</p>
+        <p class="ridge">垄状轮廓</p>
+        <p class="inset">嵌入轮廓</p>
+        <p class="outset">外凸轮廓</p>
+
+        <p class="a"><b>注意:</b> 如果只有一个 !DOCTYPE 指定 IE 8 支持 outline 属性。</p>
+
+        <p class="one">This is some text in a paragraph.</p>
+<p class="two">This is some text in a paragraph.</p>
+    </body>
+</html>

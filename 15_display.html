@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Property</title>
+        <style>
+            p {display:inline;}
+            span
+            {
+                display:block;
+            }
+
+            table, th, td 
+            {
+                border: 1px solid black;
+            }
+
+            tr.collapse 
+            {
+                visibility: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <p>display 属性的值为 "inline"的结果</p>
+        <p>两个元素显示在同一水平线上。</p>
+        <span>display 属性值为 "block" 的结果</span> <span>这两个元素之间的换行符。</span>
+        <table>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+            <tr>
+              <td>Peter</td>
+              <td>Griffin</td>
+            </tr>
+            <tr class="collapse">
+              <td>Lois</td>
+              <td>Griffin</td>
+            </tr>
+        </table>
+        <p>表格中的第三行被隐藏。</p>
+</html>
